@@ -16,9 +16,9 @@ import csv
 
 class CsvWriterPipeline:
     def __init__(self):
-        self.file = open('data.csv', 'w', newline='', encoding='utf-8') as file:
+        self.file = open('data.csv', 'w', newline='', encoding='utf-8')
         self.writer = csv.writer(self.file)
 
     def process_item(self, item, spider):
-        self.writer.writerow([item['Название'], item['Цена'], item['Ссылка'])
+        self.writer.writerow([item['Название'], item['Цена'], item['Ссылка']])
         return item
