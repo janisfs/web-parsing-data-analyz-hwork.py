@@ -1,8 +1,8 @@
 import scrapy
 
 
-class SvetnewparsSpider(scrapy.Spider):
-    name = "svetnewpars"
+class SvetParsSpider(scrapy.Spider):
+    name = "svet_pars"
     allowed_domains = ["divan.ru"]
     start_urls = ["https://www.divan.ru/category/svet"]
 
